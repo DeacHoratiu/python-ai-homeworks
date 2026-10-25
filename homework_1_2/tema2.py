@@ -14,6 +14,7 @@ def list_files() -> str:
             cwd=project_root,
             capture_output=True,
             text=True,
+            errors="replace",
             timeout=60
         )
 
@@ -48,6 +49,7 @@ def search_keyword():
             cwd=project_root,
             capture_output=True,
             text=True,
+            errors="replace",
             timeout=60
             )
 
